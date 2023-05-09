@@ -1,3 +1,11 @@
+<?
+define('server','localhost');
+define('name','root');
+define('password','');
+define('db','khaotom');?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +15,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="sigup.css">
 </head>
-</head>
+
 <body>
     <div id="login-box">
         <div class="left">
@@ -24,11 +32,11 @@
         </div>
         
         <div class="right">
-          <span class="loginwith">Sign in with<br />social network</span>
+          <h1 class="h1">Login</h1>
+          <input type="text" name="email" placeholder="E-mail" />
+          <input type="password" name="password" placeholder="Password" />
+          <input type="submit" name="login_submit" value="Login" />
           
-          <button class="social-signin facebook">Log in with facebook</button>
-          <button class="social-signin twitter">Log in with Twitter</button>
-          <button class="social-signin google">Log in with Google+</button>
         </div>
       </div>
 </body>
