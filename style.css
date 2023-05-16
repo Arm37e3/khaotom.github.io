@@ -78,6 +78,7 @@ background-color: linear-gradient(48deg, rgba(1,1,67,1) 0%, rgba(76,76,175,1) 90
    display: grid;
    place-items: center;
    height: 100vh;
+   background-color: #090979;
 }
 .img-card{
    width: 100%;
@@ -98,10 +99,4 @@ background-color: linear-gradient(48deg, rgba(1,1,67,1) 0%, rgba(76,76,175,1) 90
 .card-info{
    padding: 1rem;
    text-align: center;
-
-}
-.menu-product{
-   font-size: 30px;
-   font-family: 'Castoro Titling', cursive,'bold';
-   width: 100%;
 }

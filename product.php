@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>shop</title>
-        <link rel="stylesheet" href="product-menu.css">
+        <link rel="stylesheet" href="product.css">
     </head>
     <body>
-        <header >
+        <header>
             <img class="logo" src="./img/KhaoTom.png " alt="logo">
             <nav>
                 <ul class="nav_links">
@@ -17,12 +17,13 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>  
-            <a class="sing_up" href="sigup.html"><button>Singup/Singin</button></a>
+            <a class="sing_up" href="singup.php"><button>Singup/Singin</button></a>
+            <img src="img/cart.png" class="cart-option">
         </header>
 
-        <section id="director"c class="director">
+        <section id="director" class="director">
             <div class="center">
-                <p class="menu-product" >เมนูอาหารเช้า</p><br>
+                <p class="menu-product" style="font-size: 30px;" >เมนูอาหารเช้า</p><br>
                 <div class="grid-5">
                     <div class="card">
                         <img src="img/ข้าวต้มหมูไข่เยี่ยวม้า-removebg-preview.png" alt="" class="img-card">
@@ -67,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="menu-product">ชิ้นส่วนของหมู</p><br>
+                <p class="menu-product" style="font-size: 30px;">เนื้อหมู</p><br>
                 <div class="grid-5">
                     <div class="card">
                         <img src="img/pork/สะโพกหมู.png" class="img-card"> 
