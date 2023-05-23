@@ -1,4 +1,14 @@
+<?php
+ define('localhost','');
+ define('server', '');
+ define('username', '');
+ define('password', '');
+ define('password_confirmation', '');
+ define('address','');
+ define('phone','');
+ define('db', '');
 
+?>
 
 
 <!DOCTYPE html>
@@ -32,7 +42,7 @@
                     echo "Passwords do not match.";
                 } else {
                     // Connect to the database
-                    $conn = mysqli_connect(server, username, password, );
+                    $conn = mysqli_connect(server, username, password, address , phone ,db );
 
                     // Check if the username already exists
                     $query = "SELECT * FROM members WHERE username='$username'";
@@ -63,14 +73,6 @@
                 <input type="text" name="address" placeholder="Address" />
                 <input type="text" name="phone" placeholder="Phone" />
                 <input type="submit" name="apply" value="Sign me up" />
-            </div>
-            
-            <div class="right">
-            <h1 class="h1">Login</h1>
-            <input type="text" name="email" placeholder="E-mail" />
-            <input type="password" name="password" placeholder="Password" />
-            <input type="submit" name="login_submit" value="Login" />
-            
             </div>
         </form>
       </div>
