@@ -2,5 +2,6 @@
     "livePreview.defaultPreviewPath": "/sigup.html",
     "cSpell.words": [
         "โครงหมู"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

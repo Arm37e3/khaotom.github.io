@@ -1,14 +1,11 @@
 <?php
- define('localhost','');
- define('server', '');
- define('username', '');
- define('password', '');
- define('password_confirmation', '');
- define('address','');
- define('phone','');
- define('db', '');
-
+define('server','localhost');
+define('root','name');
+define('password','');
+define('db','khaotom')
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -42,7 +39,7 @@
                     echo "Passwords do not match.";
                 } else {
                     // Connect to the database
-                    $conn = mysqli_connect(server, username, password, address , phone ,db );
+                    $conn = mysqli_connect(server ,root, password ,db);
 
                     // Check if the username already exists
                     $query = "SELECT * FROM members WHERE username='$username'";
@@ -66,8 +63,8 @@
         <form method="post" action="">
             <div class="left" ">
                 <h1 class="h1">Sign up</h1>
-                <input type="text" name="username" placeholder="username" />
-                <input type="text" name="email" placeholder="e-mail" />
+                <input type="text" name="username" placeholder="Username" />
+                <input type="text" name="email" placeholder="E-mail" />
                 <input type="password" name="password" placeholder="Password" />
                 <input type="password" name="confirm_password" placeholder="Retype password" />
                 <input type="text" name="address" placeholder="Address" />
