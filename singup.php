@@ -1,7 +1,7 @@
 <?php
 define('server','localhost');
-define('root','name');
-define('password','');
+define('db_username','root');
+define('db_password','');
 define('db','khaotom')
 ?>
 
@@ -39,23 +39,23 @@ define('db','khaotom')
                     echo "Passwords do not match.";
                 } else {
                     // Connect to the database
-                    $conn = mysqli_connect(server ,root, password ,db);
+                    $connection = mysqli_connect(server ,db_username,db_password ,db);
 
                     // Check if the username already exists
-                    $query = "SELECT * FROM members WHERE username='$username'";
-                    $result = mysqli_query($conn, $query);
+                    $query = "SELECT * FROM user WHERE db_username='$username'";
+                    $result = mysqli_query($connection, $query);
                     if(mysqli_num_rows($result) > 0) {
                         echo "Username already exists.";
                     } else {
                         // Insert member data into the database
-                        $query = "INSERT INTO members (username, password, phone, address) VALUES ('$username', '$password', '$phone', '$address')";
-                        mysqli_query($conn, $query);
+                        $query = "INSERT INTO user (db_username, db_password, db_phone, db_address) VALUES ('$username', '$password', '$phone', '$address')";
+                        mysqli_query($connection, $query);
                         
                         // Redirect to the menu page
                         header("Location: product.php");
                         exit();
                     }
-                    mysqli_close($conn);
+                    mysqli_close($connection);
                 }
             }
         ?>
