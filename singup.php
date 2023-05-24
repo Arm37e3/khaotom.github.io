@@ -71,7 +71,6 @@ define('db','khaotom')
                 <input type="text" name="phone" placeholder="Phone" />
                 <input type="submit" name="apply" value="Sign me up" />
             </div>
-        </form>
       </div>
 </body>
 </html>
