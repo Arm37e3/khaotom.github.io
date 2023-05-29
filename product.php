@@ -17,7 +17,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>  
-            <a class="sing_up" href="singup.php"><button>Singup/Singin</button></a>
+            <a class="sing_up" href="signup.php"><button>Singup/Singin</button></a>
             <img src="img/cart.png" class="cart-option">
         </header>
 
